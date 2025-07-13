@@ -79,8 +79,3 @@ python src/urdu/xlsum/gemini_good_to_good.py --population_size 50 --num_train 15
 ## Contributing
 
 Feel free to fork, open issues, and submit pull requests.
-
-## License
-
-MIT
-# multi_objective_prompt_optimization
