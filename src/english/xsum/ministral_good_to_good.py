@@ -1,0 +1,3 @@
+# Converted from new-ministral-8b-instruct-English.ipynb
+# Model: Ministral, Scenario: Good to Good, Dataset: XSum
+# ...existing code from notebook...

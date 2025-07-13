@@ -1,0 +1,3 @@
+# Converted from new-ministral-8b-instruct-multi_good-English (1).ipynb
+# Model: Ministral, Scenario: Multi Good, Dataset: XSum
+# ...existing code from notebook...
