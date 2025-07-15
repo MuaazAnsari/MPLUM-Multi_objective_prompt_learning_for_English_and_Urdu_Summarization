@@ -1,81 +1,58 @@
+
 # MPLUM: Multi-objective Prompt Learning for English and Urdu Summarization
 
-## Project Structure
+## Project Folder Structure
 
 ```
-MPLUM-Multi_objective_prompt_learning_for_English_and_Urdu_Summarization/
-│
-├── README.md
-├── requirements.txt
-├── Datasets/
-│   ├── urdu__xlsum.json
-│   ├── english_xlsum.json
-│   └── english_xsum.json
-├── src/
-│   ├── english/
-│   │   ├── xsum/
-│   │   │   ├── llama3_good_to_good.py
-│   │   │   ├── llama3_multi_good.py
-│   │   │   ├── ministral_good_to_good.py
-│   │   │   ├── ministral_multi_good.py
-│   │   │   ├── qwen2_good_to_good.py
-│   │   │   ├── qwen2_multi_good.py
-│   │   │   ├── qwen3_good_to_good.py
-│   │   │   ├── qwen3_multi_good.py
-│   │   └── xlsum/
-│   │       ├── llama3_good_to_good.py
-│   │       ├── llama3_multi_good.py
-│   │       ├── ministral_good_to_good.py
-│   │       ├── ministral_multi_good.py
-│   │       ├── qwen2_good_to_good.py
-│   │       ├── qwen2_multi_good.py
-│   │       ├── qwen3_good_to_good.py
-│   │       ├── qwen3_multi_good.py
-│   └── urdu/
-│       └── xlsum/
-│           ├── bloomz7b_good_to_good.py
-│           ├── bloomz7b_worst_to_good.py
-│           ├── gemini_good_to_good.py
-│           ├── gemini_worst_to_good.py
-│           ├── llama3_good_to_good.py
-│           └── llama3_worst_to_good.py
+Datasets/
+    english_xlsum.json
+    english_xsum.json
+    urdu_xlsum.json
+Kaggle_files/
+    English/
+        new-llama3-1-8b-instruct-English.ipynb
+        new-llama3-1-8b-instruct-multi_good-English.ipynb
+        new-ministral-8b-instruct-English.ipynb
+        new-ministral-8b-instruct-multi_good-English (1).ipynb
+        new-ministral-8b-instruct-multi_good-English.ipynb
+        new-qwen-2-5-English.ipynb
+        new-qwen-2-5-multi_good-English.ipynb
+        new-qwen3-8b-instruct-English.ipynb
+        new-qwen3-8b-instruct-multi_good-English.ipynb
+    Urdu/
+        new-bloomz7b-urdu-summarization.ipynb
+        new-urdu-gemini-summarization.ipynb
+        new-urdu-llama-3-1-summarization.ipynb
 ```
 
+## Running Notebooks
+- All notebooks are designed to be run on Kaggle. Upload the desired notebook from `Kaggle_files/English/` or `Kaggle_files/Urdu/` to your Kaggle account.
 
-## Important
-
-**API Keys:**
-This repository does not include any personal API keys for wandb, huggingface, or gemini. Please insert your own API keys in the relevant scripts before running. Look for comments like:
-
-```python
-# NOTE: Please insert your own API keys for wandb, huggingface, or gemini where required.
-```
-
-## Installation
-
-Install all dependencies using:
-
-```bash
-pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cu124
-```
-
-## Usage
-
-- Scripts are organized by language, dataset, model, and scenario.
-- For English:
-  - `task-idx=0` for XSum
-  - `task-idx=1` for XLSum
-- For Urdu:
-  - Only XLSum (default)
-
-Example run:
-
-```bash
-python src/english/xsum/llama3_good_to_good.py --task-idx 0 --population_size 50 --num_train 150
-python src/urdu/xlsum/gemini_good_to_good.py --population_size 50 --num_train 150
-```
+## Required Setup
+1. **WandB Key**: Set up your own [Weights & Biases](https://wandb.ai/) account and add your API key in the notebook/code.
+2. **API Keys & Tokens**:
+    - Add your Hugging Face token.
+    - Add any other required API keys (e.g., for model access).
+3. **Initial Prompt**: Customize the initial prompt in the code as per your requirements.
+4. **Parameter Configuration**: Change the following parameters in the code:
+    - Population size
+    - Number of instances to be taken
+    - Number of iterations
+    - Number of operations
+    - Patience criteria
+    - WandB file names
+5. **Kaggle Path**: Set up the correct Kaggle dataset path in the notebook/code.
 
 
-## Contributing
+## Instructions
+- Before running, ensure all required keys and tokens are set.
+- Adjust parameters for your experiments as needed.
+- Refer to comments in the code for locations to update prompts, keys, and parameters.
+- For any issues, consult the notebook markdown cells for guidance.
 
-Feel free to fork, open issues, and submit pull requests.
+**Note for English Dataset Selection:**
+- To switch between XSum and XLSum datasets in English scripts, change the `task-idx` parameter:
+    - `task-idx=0` for XSum
+    - `task-idx=1` for XLSum
+  Update the value in your script or notebook command as needed.
+

@@ -1,3 +1,0 @@
-# Converted from new-qwen3-8b-instruct-English.ipynb
-# Model: Qwen3, Scenario: Good to Good, Dataset: XSum
-# ...existing code from notebook...

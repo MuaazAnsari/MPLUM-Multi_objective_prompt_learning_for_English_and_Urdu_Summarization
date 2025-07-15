@@ -1,3 +1,0 @@
-# Converted from new-llama3-1-8b-instruct-English.ipynb
-# Model: Llama3, Scenario: Good to Good, Dataset: XLSum
-# ...existing code from notebook...

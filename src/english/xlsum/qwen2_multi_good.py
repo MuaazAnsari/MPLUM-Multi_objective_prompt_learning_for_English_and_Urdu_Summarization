@@ -1,3 +1,0 @@
-# Converted from new-qwen-2-5-multi_good-English.ipynb
-# Model: Qwen2, Scenario: Multi Good, Dataset: XLSum
-# ...existing code from notebook...

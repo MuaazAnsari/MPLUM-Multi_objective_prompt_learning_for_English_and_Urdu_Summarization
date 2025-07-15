@@ -1,3 +1,0 @@
-# Converted from new-llama3-1-8b-instruct-multi_good-English.ipynb
-# Model: Llama3, Scenario: Multi Good, Dataset: XSum
-# ...existing code from notebook...

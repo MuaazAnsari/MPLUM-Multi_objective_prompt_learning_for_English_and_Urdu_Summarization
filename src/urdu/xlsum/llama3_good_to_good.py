@@ -1,3 +1,0 @@
-# Converted from new-urdu-llama-3-1-summarization.ipynb
-# Model: Llama3, Scenario: Good to Good, Dataset: XLSum
-# ...existing code from notebook...
