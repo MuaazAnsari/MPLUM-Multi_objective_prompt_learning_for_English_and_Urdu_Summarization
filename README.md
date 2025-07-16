@@ -5,8 +5,8 @@
 
 ```
 Datasets/
-    english_xlsum.json
-    english_xsum.json
+    task1290_xsum_summarization.json    
+    task1357_xlsum_summary_generation.json
     urdu_xlsum.json
 Kaggle_files/
     English/
@@ -43,16 +43,15 @@ Kaggle_files/
     - WandB file names
 5. **Kaggle Path**: Set up the correct Kaggle dataset path in the notebook/code.
 
+**Note for English Dataset Selection:**
+- To switch between XSum and XLSum datasets in English scripts, change the `task-idx` parameter:
+    - `task-idx=0` for XSum
+    - `task-idx=1` for XLSum
 
 ## Instructions
 - Before running, ensure all required keys and tokens are set.
 - Adjust parameters for your experiments as needed.
 - Refer to comments in the code for locations to update prompts, keys, and parameters.
-- For any issues, consult the notebook markdown cells for guidance.
 
-**Note for English Dataset Selection:**
-- To switch between XSum and XLSum datasets in English scripts, change the `task-idx` parameter:
-    - `task-idx=0` for XSum
-    - `task-idx=1` for XLSum
   Update the value in your script or notebook command as needed.
 
