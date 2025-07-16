@@ -13,7 +13,6 @@ Kaggle_files/
         new-llama3-1-8b-instruct-English.ipynb
         new-llama3-1-8b-instruct-multi_good-English.ipynb
         new-ministral-8b-instruct-English.ipynb
-        new-ministral-8b-instruct-multi_good-English (1).ipynb
         new-ministral-8b-instruct-multi_good-English.ipynb
         new-qwen-2-5-English.ipynb
         new-qwen-2-5-multi_good-English.ipynb
@@ -33,7 +32,7 @@ Kaggle_files/
 2. **API Keys & Tokens**:
     - Add your Hugging Face token.
     - Add any other required API keys (e.g., for model access).
-3. **Initial Prompt**: Customize the initial prompt in the code as per your requirements.
+3. **Initial Prompt**: The initial prompt needs to be taken by the user itself based on the scenario(Good to good, worst to good etc) they want. For multi good, the user has to generate different paraphrases equivalent to the population size and add them at required place. 
 4. **Parameter Configuration**: Change the following parameters in the code:
     - Population size
     - Number of instances to be taken
