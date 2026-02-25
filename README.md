@@ -1,31 +1,7 @@
 
 # MPLUM: Multi-objective Prompt Learning for English and Urdu Summarization
 
-## Project Folder Structure
 
-```
-Datasets/
-    task1290_xsum_summarization.json    
-    task1357_xlsum_summary_generation.json
-    urdu_xlsum.json
-Kaggle_files/
-    English/
-        new-llama3-1-8b-instruct-English.ipynb
-        new-llama3-1-8b-instruct-multi_good-English.ipynb
-        new-ministral-8b-instruct-English.ipynb
-        new-ministral-8b-instruct-multi_good-English.ipynb
-        new-qwen-2-5-English.ipynb
-        new-qwen-2-5-multi_good-English.ipynb
-        new-qwen3-8b-instruct-English.ipynb
-        new-qwen3-8b-instruct-multi_good-English.ipynb
-    Urdu/
-        new-bloomz7b-urdu-summarization.ipynb
-        new-urdu-gemini-summarization.ipynb
-        new-urdu-llama-3-1-summarization.ipynb
-```
-
-## Running Notebooks
-- All notebooks are designed to be run on Kaggle. Upload the desired notebook from `Kaggle_files/English/` or `Kaggle_files/Urdu/` to your Kaggle account.
 
 ## Required Setup
 1. **WandB Key**: Set up your own [Weights & Biases](https://wandb.ai/) account and add your API key in the notebook/code.
